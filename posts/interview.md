@@ -713,7 +713,7 @@ delegate(ul, 'click', 'li', (e) => console.log(e));
 
 1. 根据技术文档规格，GET 和 POST 最大区别就是语义，一个读一个写
 2. 实践上会有很多区别，如:
-3. 由于 GET 是读，POST 是写。所以 GET 是幂等的，POST 是不幂等的
+3. 由于 GET 是读，POST 是写。所以 GET 是幂等的，POST 是不幂等的(一个 HTTP 方法是幂等的，指的是同样的请求被执行一次与连续执行多次的效果是一样的，服务器的状态也是一样的)
 4. 由于 GET 是读，POST 是写。所以 GET 结果会被缓存，POST 结果不会被缓存
 5. 由于 GET 是读，POST 是写。所以 GET 打开的页面刷新是无害的，POST 打开的页面刷新需要确认
 6. 通常情况下，GET 请求参数放置在 URL 里，POST 请求参数放在 body 里
